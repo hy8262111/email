@@ -1,0 +1,11 @@
+package com.longhu.annotation;
+
+import java.lang.annotation.*;
+
+@Target({ElementType.TYPE, ElementType.METHOD})
+@Inherited
+@Documented
+@Retention(RetentionPolicy.RUNTIME)
+public @interface RequirePermission {
+    String value();
+}

@@ -1,0 +1,30 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: email
+  mail:
+    default-encoding: UTF-8
+    host: smtp.163.com
+    password: houyong8262111
+    protocol: smtp
+    username: houyworking@163.com
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/afo?useUnicode=yes&characterEncoding=utf8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+logging:
+  level:
+    com.longhu.dao: DEBUG
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+pagehelper:
+  helperDialect: mysql
+aliyunOSS:
+  bucketName: hytest20190506
+
+
+
