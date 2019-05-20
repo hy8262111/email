@@ -1,4 +1,3 @@
-/*
 package com.longhu.utils;
 
 
@@ -13,12 +12,6 @@ import java.io.InputStream;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
-*/
-/**
- * @author: houyong
- * @description:poi工具类
- * @create: 2019-05-17 10:50
- *//*
 
 @NoArgsConstructor
 public class PoiUtils {
@@ -145,4 +138,3 @@ public class PoiUtils {
     }
 }
 
-*/
