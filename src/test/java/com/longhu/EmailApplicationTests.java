@@ -66,5 +66,4 @@ public class EmailApplicationTests {
         System.out.println(s);
     }
 
-
 }
