@@ -70,6 +70,27 @@ public class PoiUtils {
     }
 
     public static ByteArrayOutputStream export(Map<String, Object> titleMap, List<Map<String, Object>> dataMapList) {
+        /**
+        ByteArrayOutputStream byteArrayOutputStream = PoiUtils.export(titleMap, dataMapList);
+        response.setContentType("octets/stream");
+        ;// 设置生成的文件类型
+        response.setCharacterEncoding("UTF-8");// 设置文件头编码方式和文件名
+        response.addHeader("Content-Disposition", "attachment;filename=" + new String("客户成交记录-".concat(DateUtils.getNow()).getBytes("UTF-8"), "iso-8859-1") + ".xlsx");
+        ServletOutputStream out = null;
+        try {
+            out = response.getOutputStream();
+            out.write(byteArrayOutputStream.toByteArray());
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                out.flush();
+                out.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        */
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet sheet = workbook.createSheet();
         XSSFRow row = sheet.createRow(0);
